@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PokeDex</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mirza:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body class="w-full h-full bg-[#01B994]">
+    <div class="w-full flex justify-center items-center flex-col">
+      <div class="mt-4 flex justify-center items-center">
+        <h1
+          class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
+        >
+          Poke Dex
+        </h1>
+      </div>
+      <div class="m-5 flex gap-2">
+        <select
+          name="type"
+          id="type"
+          class="px-4 py-2 text-black-700 bg-white border border-black-300 rounded-lg shadow-sm focus:outline-none focus:border-blue-500 shadow-base"
+        >
+          <option value="">Types</option>
+          <option value="grass">Grass</option>
+          <option value="fire">Fire</option>
+          <option value="water">Water</option>
+          <option value="bug">Bug</option>
+          <option value="normal">Normal</option>
+          <option value="poison">Poison</option>
+          <option value="electric">Electric</option>
+          <option value="ground">Ground</option>
+          <option value="fairy">Fairy</option>
+          <option value="fighting">Fighting</option>
+          <option value="psychic">Psychic</option>
+          <option value="rock">Rock</option>
+          <option value="ghost">Ghost</option>
+          <option value="ice">Ice</option>
+          <option value="dragon">Dragon</option>
+        </select>
+
+        <button
+          id="filterbtn"
+          class="text-gray-900 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 shadow-lg shadow-lime-500/50 dark:shadow-lg dark:shadow-lime-800/80 font-medium rounded-lg text-lg px-4 py-3 text-center me-2 mb-2"
+        >
+          Filter by Type
+        </button>
+        <a href="./index.html"
+          ><button
+            id="reset"
+            class="text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-lg px-4 py-3 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900"
+          >
+            Reset
+          </button></a
+        >
+      </div>
+      <div>
+        <input
+          type="text"
+          placeholder="Search Pokemon"
+          id="searchPok"
+          class="px-4 py-2 text-gray-700 bg-white border border-gray-300 rounded-md shadow-xl focus:outline-none focus:border-blue-500"
+        />
+      </div>
+    </div>
+    <div
+      id="pokemonContainer"
+      class="w-full flex justify-evenly flex-wrap gap-1 p-3 text-3xl"
+    ></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
